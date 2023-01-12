@@ -1,5 +1,5 @@
 """
-ASGI config for django_udemy_learning project.
+ASGI config for personal_portofolio_project project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_udemy_learning.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'personal_portofolio_project.settings')
 
 application = get_asgi_application()
