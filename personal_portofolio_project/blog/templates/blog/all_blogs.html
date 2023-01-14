@@ -6,6 +6,14 @@
 </head>
 <h1>Hello All Blogs</h1>
 <body>
+{% for blog in blogs %}
+    <h2>{{ blog.title }}</h2>
+    <p>
+        {{ blog.description }}
+    </p>
+    <h6>{{ blog.date }}</h6>
+{% endfor %}
+
 
 </body>
 </html>
