@@ -7,11 +7,12 @@
 <h1>Hello All Blogs</h1>
 <body>
 {% for blog in blogs %}
-    <h2>{{ blog.title }}</h2>
+    <a href="{% url 'blog:detail_blog' blog.id%}"><h2>{{ blog.title }}</h2></a>
     <p>
         {{ blog.description }}
     </p>
     <h6>{{ blog.date }}</h6>
+{#    <a href="{{ blog. }}">Detail</a>#}
 {% endfor %}
 
 
