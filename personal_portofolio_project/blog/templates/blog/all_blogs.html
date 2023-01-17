@@ -5,13 +5,14 @@
     <title>all_blogs</title>
 </head>
 <h1>Hello All Blogs</h1>
+<h2>Felicio has writen {{ blogs.count }} blog {{ blogs.count | pluralize }}</h2>
 <body>
 {% for blog in blogs %}
     <a href="{% url 'blog:detail_blog' blog.id%}"><h2>{{ blog.title }}</h2></a>
     <p>
-        {{ blog.description }}
+        {{ blog.description|truncatechars:100 }}
     </p>
-    <h6>{{ blog.date }}</h6>
+    <h6>{{ blog.date|date:'M d Y' | upper}}</h6>
 {#    <a href="{{ blog. }}">Detail</a>#}
 {% endfor %}
 

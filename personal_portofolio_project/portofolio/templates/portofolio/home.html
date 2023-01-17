@@ -7,8 +7,9 @@
     <title>Portofolio</title>
 </head>
 <h1>Felicio's Portofolio</h1>
-  <img src="{% static 'portofolio/1200px-Maradona-Mundial_86_con_la_copa.jpg' %}" height="80" width="60">
-  <a href="{% static 'portofolio/Felicio Fernandes-JOG-GQMJHY-DIL-FLIGHT_ORIGINATING.pdf' %}"> Resume</a>
+  <br><a href="{% url 'blog:all_blogs' %}"> Blog</a>
+{#  <br><img src="{% static 'portofolio/1200px-Maradona-Mundial_86_con_la_copa.jpg' %}" height="80" width="60">#}
+  <br><a href="{% static 'portofolio/Felicio Fernandes-JOG-GQMJHY-DIL-FLIGHT_ORIGINATING.pdf' %}"> Resume</a>
 <body>
 
 {% for project in projects %}
